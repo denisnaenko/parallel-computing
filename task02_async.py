@@ -47,26 +47,6 @@ async def asyncio_method():
     print(f'asyncio time: {end_time - start_time:0.2f} seconds\n')
 
 
-def sequence():
-    start_time = time.time()
-    fibonacci(699993)
-    trapezoidal_rule(math.sin, 0, math.pi, 20000000)
-    end_time = time.time()
-    print(f'sequence time: {end_time - start_time:0.2f} seconds\n')
-
-
 if __name__ == '__main__':
-    """
-    Running threads:
-    trapezoidal_rule = 2.000000000000087
-    fibonacci = 8
-    threads time: 7.42 seconds
-
-    Running processes:
-    trapezoidal_rule = 2.000000000000087
-    fibonacci = 8
-    processes time: 5.94 seconds
-    """
-
     print("Running with asyncio:")
     asyncio.run(asyncio_method())
