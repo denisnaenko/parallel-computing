@@ -15,7 +15,7 @@ def fibonacci(n):  # содержимое функции не менять
     a, b = 0, 1
     for _ in range(2, n + 1):
         a, b = b, a + b
-    print(f'fibonacci = {b % 10}')
+    #print(f'fibonacci = {b % 10}')
 
 
 # запускать с f, a, b, n равными соответственно math.sin, 0, math.pi, 20000000
@@ -25,7 +25,7 @@ def trapezoidal_rule(f, a, b, n):  # содержимое функции не м
     integral = (f(a) + f(b)) / 2.0
     for i in range(1, n):
         integral += f(a + i * h)
-    print(f'trapezoidal_rule = {integral * h}')
+    #print(f'trapezoidal_rule = {integral * h}')
 
 
 def sequence():
